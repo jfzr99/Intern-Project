@@ -1,5 +1,6 @@
 ## Deskripsi Teknis Project
 
+[CLICK HERE FOR END RESULT]()
 ### Tujuan Project
 Project ini bertujuan untuk membuat skrip persiapan data untuk dokumen UU Indonesia tentang ketenagakerjaan. Proses ini melibatkan parsing PDF menjadi teks dan kemudian mengonversi teks tersebut ke dalam bentuk tabel, lalu dikembangkan dengan manipulation script. Skrip ini dirancang untuk mengatasi kendala teknis yang ditemukan selama pengembangan, dan pemisahan antara konteks dan konten terbukti menjadi solusi yang efektif.
 
