@@ -52,8 +52,16 @@ Dalam proyek ini, kami memanfaatkan dua file utama untuk membantu dalam proses p
   - Isi Bab, Isi Bagian, Isi Pasal, Isi Ayat
 
 ### Skrip Parsing Konteks
+Skrip ini berfungsi untuk mengekstrak konteks dari teks yang telah diparsing untuk membuat tabel yang berisi informasi tentang bab, bagian, pasal, dan ayat.
+
 #### `context parsing.py`
-Skrip ini berfungsi untuk mengekstrak konteks dari teks yang telah diparsing untuk membuat tabel yang berisi informasi tentang bab, bagian, pasal, dan ayat. Berikut adalah contoh implementasi dan deskripsi teknisnya:
+- **re**: Digunakan untuk menemukan pola dalam teks.
+- **pandas**: Digunakan untuk membuat dan mengolah DataFrame.
+- **Proses Utama**:
+  - Membaca isi file teks.
+  - Memproses teks untuk mendapatkan halaman dan konteks.
+  - Mengekstraksi informasi tentang bab, bagian, pasal, dan ayat.
+  - Membuat DataFrame dan menyimpan hasilnya ke dalam file Excel.
 
 ```python
 import re
@@ -88,8 +96,16 @@ df.to_excel("user\path", index=False)
 ```
 
 ### Skrip Parsing Konten
+Skrip ini memproses teks yang telah dihasilkan dari PDF untuk mengekstrak dan mengorganisir konten ke dalam bentuk tabel.
+
 #### `content parsing.py`
-Skrip ini memproses teks yang telah dihasilkan dari PDF untuk mengekstrak dan mengorganisir konten ke dalam bentuk tabel. Berikut adalah contoh implementasi dan deskripsi teknisnya:
+- **re**: Digunakan untuk menemukan dan memanipulasi pola dalam teks.
+- **pandas**: Digunakan untuk membuat dan mengolah DataFrame.
+- **Proses Utama**:
+  - Membaca isi file teks.
+  - Memproses teks untuk mendapatkan halaman dan konten.
+  - Mengekstraksi kalimat yang dimulai dan diakhiri dengan tanda `$`.
+  - Membuat DataFrame dan menyimpan hasilnya ke dalam file Excel.
 
 ```python
 import re
